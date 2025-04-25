@@ -1,0 +1,11 @@
+contacto {
+    background-color: #060563;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 38px;
+    font-family: Arial, sans-serif;
+}
