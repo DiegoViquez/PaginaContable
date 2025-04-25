@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad Sergio Viquez</title>
+    <link href="img/Logo_ContabilidadSergio.png" rel="icon">
+    <link rel="stylesheet" href="css/correo.css">
+    <script src="Js/registrarse.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <img src="/img/Logo_ContabilidadSergio.png" alt="logo" style="width: 100px; height: 100px;">
+
+
+      <!-- Formulario de Registro -->
+      <div id="registro">
+        <h2>Registrarse</h2>
+        <div class="mensaje" id="mensajeRegistro"></div>
+        <div class="form-group"><input type="text" id="nombre" placeholder="Nombre completo" required></div>
+        <div class="form-group"><input type="text" id="cedula" placeholder="Cédula" required></div>
+        <div class="form-group"><input type="email" id="correoRegistro" placeholder="Correo electrónico" required></div>
+        <div class="form-group"><input type="password" id="contrasenaRegistro" placeholder="Contraseña" required></div>
+        <button onclick="registrar()">Registrarse</button>
+        <div class="switch">¿Ya tienes cuenta? <a onclick="mostrarLogin()">Inicia sesión</a></div>
+      </div>
+  
+      <!-- Formulario de Login -->
+      <div id="login" class="hidden">
+        <h2>Iniciar Sesión</h2>
+        <div class="mensaje" id="mensajeLogin"></div>
+        <div class="form-group"><input type="email" id="correoLogin" placeholder="Correo electrónico" required></div>
+        <div class="form-group"><input type="password" id="contrasenaLogin" placeholder="Contraseña" required></div>
+        <button onclick="iniciarSesion()">Entrar</button>
+        <div class="switch">¿No tienes cuenta? <a onclick="mostrarRegistro()">Regístrate</a></div>
+      </div>
+    </div>
+  
+  </body>
+</html>
